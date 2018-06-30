@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector!</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Crystal Collector!</h1>
+    </div>
+    <div class="gameRules">
+        <p>You will be given a random number at the start of the game</p>
+        <p>There are four crystals below. By clicking a crystal, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above
+            the random number</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+    </div>
+
+    <div class="scoreBoard">
+        <div>
+            <h2 class="randomNumberDisplay">
+            </h2>
+        </div>
+        <div class="win-loss-record">
+        </div>
+    </div>
+
+    <div class="crystalRow">
+        <div class="crystal" id="ruby">
+            <img class="crystalImage" src="./assets/images/ruby.png">
+        </div>
+        <div class="crystal" id="saphire">
+            <img class="crystalImage" src="./assets/images/saphire.png">
+        </div>
+        <div class="crystal" id="quartz">
+            <img class="crystalImage" src="./assets/images/quartz.png">
+        </div>
+        <div class="crystal" id="emerald">
+            <img class="crystalImage" src="./assets/images/emerald.png">
+        </div>
+    </div>
+
+    <div class="scoreDeclare">
+        <p>Your total score is:</p>
+        <h2 class="scoreDisplay">
+        </h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
